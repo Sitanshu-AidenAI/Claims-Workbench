@@ -1,14 +1,78 @@
+# ========================
+# SECRETS & ENV FILES
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# PYTHON / BACKEND
+# ========================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.coverage
+.coverage
+htmlcov/
+
+# UV (Python package manager)
+# Keep uv.lock (it's like package-lock.json, useful to commit)
+# uv.lock  <-- do NOT ignore this
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================
+# FRONTEND / NODE
+# ========================
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/build/
+frontend/dist/
+.cache/
+
+# ========================
+# EDITOR & OS
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ========================
+# MISC PROJECT FILES
+# ========================
 App.css
-claude.md 
-Click Path for ARCH FNOL & CLAIMS DEMO 4.pdf 
-context.txt 
-End to End Flow.docx 
-f_requirements.txt 
-FNOL_Process_v0.2.drawio 
-index.css 
-Process Flow.docx 
-prompt.txt 
-Screenshot from 2026-03-06 13-52-06.png 
-Screenshot from 2026-03-06 14-16-11.png 
-Screenshot from 2026-03-06 14-29-11.png 
-Screenshot from 2026-03-06 16-04-55.png
+claude.md
+context.txt
+prompt.txt
+*.pdf
+*.docx
+*.drawio
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+*.ods
+*.zip
+seed.err

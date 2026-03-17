@@ -1,0 +1,621 @@
+﻿4.1 Functional Requirements
+FR-1: User Authentication & Authorization
+ID
+Requirement
+Priority
+FR-1.1
+System shall support role-based access control (FNOL Operator, Claim Handler, Claim Manager, Specialists)
+Must Have
+FR-1.2
+System shall authenticate users before granting access
+Must Have
+FR-1.3
+System shall maintain audit trail of user actions
+Must Have
+FR-2: Policy Management
+ID
+Requirement
+Priority
+FR-2.1
+System shall allow search for policies by policy number
+Must Have
+FR-2.2
+System shall display policy details including policyholder info, coverage, deductibles
+Must Have
+FR-2.3
+System shall show insured objects (vehicles for motor, directors for D&O)
+Must Have
+FR-2.4
+System shall display reinsurance arrangements
+Must Have
+FR-2.5
+System shall provide View Policy Document functionality
+Must Have
+FR-2.6
+System shall generate AI-powered Policy Summary
+Should Have
+FR-3: FNOL (First Notice of Loss)
+ID
+Requirement
+Priority
+FR-3.1
+System shall create new claims with auto-generated Claim ID
+Must Have
+FR-3.2
+System shall auto-populate policy details upon policy number entry
+Must Have
+FR-3.3
+System shall capture loss details (date, time, type, cause, location)
+Must Have
+FR-3.4
+System shall support different subject details based on policy type (Vehicle vs. Director)
+Must Have
+FR-3.5
+System shall enforce mandatory document upload by category
+Must Have
+FR-3.6
+System shall provide AI Assistance sidebar with suggestions
+Should Have
+FR-3.7
+System shall support Prefill functionality for loss details
+Should Have
+FR-3.8
+System shall capture regulatory body involvement (for D&O)
+Must Have
+FR-3.9
+System shall capture defense lawyer details (for D&O)
+Must Have
+FR-3.10
+System shall route completed FNOL to Claim Handler Dashboard
+Must Have
+FR-4: Claim Handler Dashboard
+ID
+Requirement
+Priority
+FR-4.1
+System shall display claims in grid format with key details
+Must Have
+FR-4.2
+System shall support List View and Kanban View
+Should Have
+FR-4.3
+System shall show Recent Activities section
+Should Have
+FR-4.4
+System shall display claim status charts (New, In Progress, Completed)
+Should Have
+FR-4.5
+System shall display reporting metrics (Late Report, Delayed Reporting, Timely Reported)
+Should Have
+FR-4.6
+System shall support search and filter functionality
+Must Have
+FR-4.7
+System shall indicate claim priority (High, Medium, Low)
+Should Have
+FR-5: Claim Details Management
+ID
+Requirement
+Priority
+FR-5.1
+System shall display Claim Summary with status indicators
+Must Have
+FR-5.2
+System shall provide editable Claim Details (amount, loss date, location, severity)
+Must Have
+FR-5.3
+System shall show Claim History (Policy History and Claimant History)
+Must Have
+FR-5.4
+System shall display AI-generated Claim Summary Box
+Should Have
+FR-5.5
+System shall provide AI-generated Recommended Steps
+Should Have
+FR-5.6
+System shall detect and display Similar Incidents
+Should Have
+FR-5.7
+System shall display Risk & Fraud Indicators with scores
+Should Have
+FR-5.8
+System shall show Loss Details breakdown (Legal Defense Cost, Loss Estimate)
+Must Have
+FR-5.9
+System shall display claim type distribution chart
+Should Have
+FR-5.10
+System shall display claim frequency over years chart
+Should Have
+FR-5.11
+System shall show Top 5 History with claim details
+Should Have
+FR-5.12
+System shall show Payment History
+Should Have
+FR-6: Company Info Management
+ID
+Requirement
+Priority
+FR-6.1
+System shall display company details pre-populated from FNOL
+Must Have
+FR-6.2
+System shall allow editing of company contact information
+Must Have
+FR-6.3
+System shall capture VAT registration status
+Should Have
+FR-7: Policy Details in Claim Handler
+ID
+Requirement
+Priority
+FR-7.1
+System shall display policy information with editable fields
+Must Have
+FR-7.2
+System shall show Detailed Coverages and Deductibles in accordion format
+Must Have
+FR-7.3
+System shall display coverage limits and deductibles per coverage type
+Must Have
+FR-7.4
+System shall show vehicle-specific coverage (for motor policies)
+Must Have
+FR-8: Task Management
+ID
+Requirement
+Priority
+FR-8.1
+System shall display all tasks across sub-claims in a consolidated grid
+Must Have
+FR-8.2
+System shall show task details (Sub Claim ID, Description, Due Date, Assigned To, Status)
+Must Have
+FR-8.3
+System shall support adding new tasks
+Must Have
+FR-8.4
+System shall support task status updates
+Must Have
+FR-8.5
+System shall allow AI-based task assignment
+Should Have
+FR-9: Sub-claim Management
+ID
+Requirement
+Priority
+FR-9.1
+System shall support multiple sub-claims per claim
+Must Have
+FR-9.2
+System shall display sub-claims in grid format
+Must Have
+FR-9.3
+System shall support Edit and Delete operations on sub-claims
+Must Have
+FR-9.4
+System shall support adding new sub-claims
+Must Have
+FR-9.5
+System shall provide View Summary option for each sub-claim
+Must Have
+FR-9.6
+System shall provide Progress Tracker showing completion status
+Should Have
+FR-10: Sub-claim Info
+ID
+Requirement
+Priority
+FR-10.1
+System shall display sub-claim details (ID, Coverage Name, Type, Description)
+Must Have
+FR-10.2
+System shall show claim owner and claimant information
+Must Have
+FR-10.3
+System shall display body injury information with visual indicator (for bodily injury claims)
+Must Have
+FR-10.4
+System shall support defense lawyers grid (for D&O claims)
+Must Have
+FR-11: Sub-claim Tasks
+ID
+Requirement
+Priority
+FR-11.1
+System shall display tasks specific to the sub-claim
+Must Have
+FR-11.2
+System shall show task details upon clicking task card
+Must Have
+FR-11.3
+System shall allow editing task details including due date
+Must Have
+FR-12: Claim Documents
+ID
+Requirement
+Priority
+FR-12.1
+System shall display documents uploaded during FNOL
+Must Have
+FR-12.2
+System shall show document count and mandatory document alerts
+Must Have
+FR-12.3
+System shall support adding additional documents
+Must Have
+FR-12.4
+System shall support document download
+Must Have
+FR-12.5
+System shall support document edit and delete
+Must Have
+FR-12.6
+System shall provide AI-based document classification
+Should Have
+FR-13: Legal - Litigation
+ID
+Requirement
+Priority
+FR-13.1
+System shall display litigation details (ID, Complainant, Jurisdiction, Dates)
+Must Have
+FR-13.2
+System shall make fields editable only when Litigation Specialist is activated
+Must Have
+FR-13.3
+System shall provide GEN AI INSIGHT for legal analysis
+Should Have
+FR-14: Legal - Subrogation
+ID
+Requirement
+Priority
+FR-14.1
+System shall display recovery from third parties in grid format
+Must Have
+FR-14.2
+System shall show party details (Name, Role, Type, Assigned To, Category)
+Must Have
+FR-14.3
+System shall calculate Total Subrogation Amount
+Must Have
+FR-14.4
+System shall make fields editable only when Subrogation Specialist is activated
+Must Have
+FR-14.5
+System shall provide GEN AI INSIGHT for recovery analysis
+Should Have
+FR-15: Legal - SIU (Special Investigation Unit)
+ID
+Requirement
+Priority
+FR-15.1
+System shall display SIU details (Status, Investigator, Start Date, Reason, Notes)
+Must Have
+FR-15.2
+System shall show Flag for SIU button when status is Flagged
+Must Have
+FR-15.3
+System shall provide GEN AI INSIGHT for fraud analysis
+Should Have
+FR-15.4
+System shall integrate with AI-based fraud detection
+Should Have
+FR-16: Stakeholder Management - Salvage
+ID
+Requirement
+Priority
+FR-16.1
+System shall display accident management details
+Must Have
+FR-16.2
+System shall support salvage company assignment
+Must Have
+FR-16.3
+System shall capture customer sign-off details
+Must Have
+FR-16.4
+System shall calculate Total Salvage Amount
+Must Have
+FR-16.5
+System shall make fields editable only when Salvage Specialist is activated
+Must Have
+FR-16.6
+System shall provide GEN AI INSIGHT for salvage valuation
+Should Have
+FR-17: Stakeholder Management - External Vehicle Management
+ID
+Requirement
+Priority
+FR-17.1
+System shall display hire companies grid
+Must Have
+FR-17.2
+System shall show party details (Name, Role, Type, Assigned To, Code)
+Must Have
+FR-17.3
+System shall calculate Total Hire Cost
+Must Have
+FR-17.4
+System shall support External Vehicle Management Specialist activation
+Must Have
+FR-17.5
+System shall provide GEN AI INSIGHT
+Should Have
+FR-18: Stakeholder Management - Assign Vendor
+ID
+Requirement
+Priority
+FR-18.1
+System shall support vendor assignment by service type
+Must Have
+FR-18.2
+System shall capture vendor details (Name, Email, Assignment Date)
+Must Have
+FR-18.3
+System shall support service types: Repair, Legal, Appraisal, Investigation, Loss Adjuster
+Must Have
+FR-18.4
+System shall redirect to Loss Adjuster Report screen when Loss Adjuster is selected
+Must Have
+FR-18.5
+System shall provide AI-based vendor recommendation
+Should Have
+FR-19: Loss Adjuster Report
+ID
+Requirement
+Priority
+FR-19.1
+System shall support document upload for loss adjuster report
+Must Have
+FR-19.2
+System shall display vehicle details (VIN, Make, Model, Year, Coverage status)
+Must Have
+FR-19.3
+System shall display uploaded images
+Must Have
+FR-19.4
+System shall provide Generate Analysis button for AI-powered damage assessment
+Should Have
+FR-19.5
+System shall use vision AI to analyze uploaded images
+Should Have
+FR-20: Add Party
+ID
+Requirement
+Priority
+FR-20.1
+System shall support adding Individual party type
+Must Have
+FR-20.2
+System shall support adding Organization party type
+Must Have
+FR-20.3
+System shall capture party details based on type
+Must Have
+FR-20.4
+System shall provide Sanction Check functionality
+Must Have
+FR-20.5
+System shall display party grid after adding
+Must Have
+FR-20.6
+System shall provide GEN AI INSIGHT
+Should Have
+FR-20.7
+System shall integrate with AI-based sanction screening
+Should Have
+FR-21: Collaborate
+ID
+Requirement
+Priority
+FR-21.1
+System shall support selecting users to message
+Must Have
+FR-21.2
+System shall display message threads
+Must Have
+FR-21.3
+System shall support replying to messages
+Must Have
+FR-21.4
+System shall show message history with timestamps
+Must Have
+FR-21.5
+System shall support @mentions
+Should Have
+FR-22: Financials - Manage Deductibles
+ID
+Requirement
+Priority
+FR-22.1
+System shall display deductible details (Type, Amount, Applied On, Status)
+Must Have
+FR-22.2
+System shall show Detailed Coverages and Deductibles in accordion format
+Must Have
+FR-22.3
+System shall support Save Change functionality
+Must Have
+FR-22.4
+System shall display grid with updated deductible details after save
+Must Have
+FR-23: Financials - Manage Reserve
+ID
+Requirement
+Priority
+FR-23.1
+System shall display reserve grid (Standing Reserve, Reserve Amount, Deductible, Added By, Status)
+Must Have
+FR-23.2
+System shall support Add Reserve functionality
+Must Have
+FR-23.3
+System shall calculate Total Reserve
+Must Have
+FR-23.4
+System shall provide Reinsurance Split popup showing reinsurer breakdown
+Must Have
+FR-23.5
+System shall provide Make Payment button per reserve row
+Must Have
+FR-23.6
+System shall provide GEN AI INSIGHT for reserve analysis
+Should Have
+FR-23.7
+System shall support AI-based reserve estimation
+Should Have
+FR-24: Financials - Settlement
+ID
+Requirement
+Priority
+FR-24.1
+System shall display settlement details per sub-claim type
+Must Have
+FR-24.2
+System shall support Select Share Type (Our Share, Reinsurer shares)
+Must Have
+FR-24.3
+System shall display grid with coverage details and amounts
+Must Have
+FR-24.4
+System shall support payment method selection
+Must Have
+FR-24.5
+System shall capture account details for disbursement
+Must Have
+FR-24.6
+System shall provide Process Payment functionality
+Must Have
+FR-24.7
+System shall check authority limits before processing payment
+Must Have
+FR-24.8
+System shall redirect to Claim Manager Dashboard if amount exceeds authority limit
+Must Have
+FR-24.9
+System shall provide GEN AI INSIGHT for settlement recommendation
+Should Have
+FR-25: Claim Manager Dashboard
+ID
+Requirement
+Priority
+FR-25.1
+System shall display pending approval requests in grid
+Must Have
+FR-25.2
+System shall show approval details (Claim ID, Policy Holder, Handler, Amount, Authority Limit, Status)
+Must Have
+FR-25.3
+System shall provide View option to see detailed claim information
+Must Have
+FR-25.4
+System shall display charts (Claim Type Distribution, Average Approval Time Trend)
+Should Have
+FR-25.5
+System shall support Approve/Decline actions
+Must Have
+FR-25.6
+System shall update payment status after manager decision
+Must Have
+FR-26: AI Features
+ID
+Requirement
+Priority
+FR-26.1
+System shall provide AI Assistance sidebar throughout the application
+Should Have
+FR-26.2
+System shall generate Claim Summary Box using AI
+Should Have
+FR-26.3
+System shall generate Recommended Steps using AI
+Should Have
+FR-26.4
+System shall detect Similar Incidents using AI/ML
+Should Have
+FR-26.5
+System shall calculate Risk Score using AI
+Should Have
+FR-26.6
+System shall calculate Fraud Score using AI
+Should Have
+FR-26.7
+System shall provide GEN AI INSIGHT on multiple screens
+Should Have
+FR-26.8
+System shall support image analysis for loss adjuster reports
+Should Have
+FR-26.9
+System shall provide AI-based document classification
+Could Have
+FR-26.10
+System shall provide AI-based reserve estimation
+Could Have
+FR-26.11
+System shall provide AI-based vendor recommendation
+Could Have
+FR-26.12
+System shall provide AI-based settlement recommendation
+Could Have
+FR-26.13
+System shall support RAG-based policy document Q&A
+Could Have
+FR-26.14
+System shall support RAG-based claims knowledge base
+Could Have
+4.2 Non-Functional Requirements
+ID
+Category
+Requirement
+Priority
+NFR-1
+Performance
+System shall load dashboard within 3 seconds
+Must Have
+NFR-2
+Performance
+System shall process FNOL submission within 5 seconds
+Must Have
+NFR-3
+Availability
+System shall be available 99.9% of the time
+Must Have
+NFR-4
+Scalability
+System shall support 1000 concurrent users
+Should Have
+NFR-5
+Security
+System shall encrypt all data in transit and at rest
+Must Have
+NFR-6
+Security
+System shall implement role-based access control
+Must Have
+NFR-7
+Compliance
+System shall maintain audit trail for all actions
+Must Have
+NFR-8
+Usability
+System shall be responsive across devices
+Should Have
+NFR-9
+Usability
+System shall provide clear error messages
+Must Have
+NFR-10
+Integration
+System shall integrate with AI/ML services
+Should Have
+NFR-11
+Integration
+System shall support document storage service
+Must Have
+NFR-12
+Integration
+System shall support email notifications
+Should Have
+
